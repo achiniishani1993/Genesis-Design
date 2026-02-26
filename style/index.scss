@@ -1,13 +1,16 @@
+@use "base";
+@use "colors";
+@use "nav";
+@use "header";
+
 /* Define standard variables and values for website */
-$bgcolor: orange ;
-$textcolor: black;
-$fontsize: 18px;
+$myFont:"Mulish", sans-serif;
+
 
 /* Use the variables */
 body {
-  background-color: $bgcolor;
-  color: $textcolor;
-  font-size: $fontsize;
+  font-family: $myFont;
+  min-height: 100vh;
+
 }
 
-   

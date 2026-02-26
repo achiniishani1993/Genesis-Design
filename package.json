@@ -7,8 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "sass": "sass style/mystyle.scss style/style.css -w",
-    "compile-sass": "sass style/mystyle.scss style/style.css"
+  "sass": "sass style/index.scss style/index.css -w",
+  "compile-sass": "sass style/index.scss style/index.css"
   },
   "dependencies": {
     "sass": "^1.97.3"

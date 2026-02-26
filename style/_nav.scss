@@ -1,0 +1,36 @@
+@import "colors";
+
+// Define variables
+$fontSize: 18px;
+$contentMargin: 20px 60px;
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: $contentMargin;
+  img {
+    width: 90px;
+    height: auto;
+  }
+}
+
+.navLinks {
+  display: flex;
+  gap: 60px;
+
+  a {
+    text-decoration: none;
+    color: $textcolor;
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: 400;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondColor;
+    }
+  }
+}
