@@ -1,0 +1,16 @@
+{
+  "name": "genesis-design",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style/mystyle.scss style/style.css -w",
+    "compile-sass": "sass style/mystyle.scss style/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.97.3"
+  }
+}
