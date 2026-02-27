@@ -3,6 +3,14 @@
 // Define variables
 $contentMargin: 20px 60px;
 
+//map function for fonts
+$font-sizes: (
+  "small": 12px, 
+  "normal": 18px, 
+  "large": 22px, 
+  "ex-large": 40px
+);
+
 .textContainer {
     display: flex;
     justify-content: space-between;
@@ -14,14 +22,14 @@ $contentMargin: 20px 60px;
 .textOne {
     h6 {
         margin: 0 0 40px 0;   
-        font-size: 22px;
+        font-size: map-get($font-sizes, "large");
         font-weight: bold;
         color: $secondColor;
     }
 
     p {
         margin: 0;           
-        font-size: 40px;
+        font-size: map-get($font-sizes, "ex-large");
         line-height: 1.5;
         font-weight: bold;
 
@@ -50,6 +58,6 @@ $contentMargin: 20px 60px;
     p {
         margin: 0;        
         font-style: italic;
-        font-size: 18px;
+        font-size: map-get($font-sizes, "normal");
     }
 }

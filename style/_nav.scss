@@ -1,9 +1,15 @@
 @import "colors";
 
 // Define variables
-$fontSize: 18px;
 $contentMargin: 20px 60px;
 
+//map function for fonts
+$font-sizes: (
+  "small": 12px, 
+  "normal": 18px, 
+  "large": 22px, 
+  "ex-large": 40px
+);
 
 nav {
   display: flex;
@@ -24,7 +30,7 @@ nav {
   a {
     text-decoration: none;
     color: $textcolor;
-    font-size: $fontSize;
+    font-size: map-get($font-sizes, "normal");
     font-style: normal;
     font-weight: 400;
     transition: color 0.3s ease;
