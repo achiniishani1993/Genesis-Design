@@ -224,6 +224,42 @@ section {
   font-weight: 400;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 60px;
+}
+footer__logo {
+  width: 90px;
+  height: auto;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 60px;
+}
+.footerLinks a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.footerLinks a:hover {
+  color: #4a4ff2;
+}
+.footerLinks img {
+  width: 15px;
+  height: 15px;
+  transition: 0.3s ease;
+}
+.footerLinks img:hover {
+  transform: scale(1.2);
+}
+
 /* Define standard variables and values for website */
 /* Use the variables */
 body {

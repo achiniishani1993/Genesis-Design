@@ -1,3 +1,5 @@
+@use "colors";
+
 //map function for fonts
 $font-sizes: (
   "small": 16px,
@@ -5,3 +7,46 @@ $font-sizes: (
   "large": 22px,
   "ex-large": 40px,
 );
+
+// Define variables
+$contentMargin: 20px 60px;
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: $contentMargin;
+  &__logo {
+    width: 90px;
+    height: auto;
+  }
+}
+
+.footerLinks {
+  display: flex;
+  gap: 60px;
+
+  a {
+    text-decoration: none;
+    color: colors.$textcolor;
+    font-size: map-get($font-sizes, "normal");
+    font-style: normal;
+    font-weight: 400;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: colors.$secondColor;
+    }
+  }
+
+  img {
+    width: 15px;
+    height: 15px;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
