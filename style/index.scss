@@ -3,13 +3,14 @@
 @use "nav";
 @use "header";
 @use "main";
+@use "table";
 
 /* Define standard variables and values for website */
 $myFont: "Mulish", sans-serif;
 
 //map function for fonts
 $font-sizes: (
-  "small": 12px,
+  "small": 16px,
   "normal": 18px,
   "large": 22px,
   "ex-large": 40px,

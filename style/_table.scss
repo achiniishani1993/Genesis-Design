@@ -1,0 +1,68 @@
+
+@use "colors";
+//map function for fonts
+ $font-sizes: (
+  "small": 16px, 
+  "normal": 18px, 
+  "large": 22px, 
+  "xx-large": 28px,
+  "xxx-large": 40px
+);
+
+.awards {
+  width: 100%;
+  padding-top: 1rem;
+
+ 
+  
+  &__group , &__end {
+    border-top: 1px solid colors.$boderColor;
+    width: 100%;
+    
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr auto;
+    column-gap: 1rem;
+    padding: 2rem 0;
+    align-items: start;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__org {
+    font-size: map-get($font-sizes, "large");
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: map-get($font-sizes, "normal");
+    font-weight: bold;
+   
+  }
+
+  &__project {
+    h4 {
+      font-size: map-get($font-sizes, "small");
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: map-get($font-sizes, "small");
+      line-height: 1.6;
+      opacity: 0.6;
+      max-width: 300px;
+    }
+  }
+
+  &__year {
+    text-align: right;
+    font-size: map-get($font-sizes, "small");
+    font-weight: 400;
+  }
+
+}
