@@ -6,10 +6,10 @@
   "author": "",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {
-  "sass": "sass style/index.scss style/index.css -w",
-  "compile-sass": "sass style/index.scss style/index.css"
-  },
+"scripts": {
+  "sass": "sass style:style --watch",
+  "compile-sass": "sass style:style"
+},
   "dependencies": {
     "sass": "^1.97.3"
   }
