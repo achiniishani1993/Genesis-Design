@@ -2,22 +2,23 @@
 @use "colors";
 @use "nav";
 @use "header";
+@use "main";
 
 /* Define standard variables and values for website */
-$myFont:"Mulish", sans-serif;
+$myFont: "Mulish", sans-serif;
 
 //map function for fonts
 $font-sizes: (
-  "small": 12px, 
-  "normal": 18px, 
-  "large": 22px, 
-  "ex-large": 40px
+  "small": 12px,
+  "normal": 18px,
+  "large": 22px,
+  "ex-large": 40px,
 );
 
 /* Use the variables */
 body {
   font-family: $myFont;
   min-height: 100vh;
+  color: colors.$textcolor;
 }
-
 

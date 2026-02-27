@@ -8,7 +8,8 @@ $font-sizes: (
   "small": 12px, 
   "normal": 18px, 
   "large": 22px, 
-  "ex-large": 40px
+  "xx-large": 28px,
+  "xxx-large": 40px
 );
 
 .textContainer {
@@ -29,7 +30,7 @@ $font-sizes: (
 
     p {
         margin: 0;           
-        font-size: map-get($font-sizes, "ex-large");
+        font-size: map-get($font-sizes, "xxx-large");
         line-height: 1.5;
         font-weight: bold;
 
@@ -59,5 +60,6 @@ $font-sizes: (
         margin: 0;        
         font-style: italic;
         font-size: map-get($font-sizes, "normal");
+        opacity: 0.6;
     }
 }
