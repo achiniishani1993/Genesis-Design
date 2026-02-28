@@ -5,8 +5,6 @@
 @use "main";
 @use "table";
 @use "footer";
-/* Define standard variables and values for website */
-$myFont: "Mulish", sans-serif;
 
 //map function for fonts
 $font-sizes: (
@@ -16,10 +14,5 @@ $font-sizes: (
   "ex-large": 40px,
 );
 
-/* Use the variables */
-body {
-  font-family: $myFont;
-  min-height: 100vh;
-  color: colors.$textcolor;
-}
+
 

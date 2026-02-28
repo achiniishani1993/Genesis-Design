@@ -1,6 +1,77 @@
 @use "base";
 @use "colors";
 @use "nav";
-@use "main";
 @use "footer";
 
+
+//map function for fonts
+$font-sizes: (
+  "small": 16px,
+  "normal": 18px,
+  "large": 22px,
+  "ex-large": 40px,
+);
+// Define variables
+$sectionMargin: 50px 60px;
+
+.fresh {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin: $sectionMargin;
+  
+
+  &_text {
+    h2 {
+      max-width: 300px;
+      width: 100%;
+      text-align: left;
+      font-size: map-get($font-sizes, "xx-large");
+      font-weight: bold;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      max-width: 650px;
+      width: 100%;
+      text-align: left;
+      font-size: map-get($font-sizes, "small");
+      line-height: 1.6;
+      font-weight: 300;
+      opacity: 0.7;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &_project {
+    margin: 0 30px 0 60px;
+
+    .project_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+
+      .project_x {
+        font-size: map-get($font-sizes, "normal");
+        font-weight: bold;
+        opacity: 0.5;
+      }
+
+      .project_y {
+        font-size: map-get($font-sizes, "normal");
+        font-weight: bold;
+      }
+
+      .project_end {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}

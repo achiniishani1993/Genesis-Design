@@ -1,3 +1,8 @@
+@use "colors";
+/* Define standard variables and values for website */
+$myFont: "Mulish", sans-serif;
+
+
 /* Base / Global Reset */
 
 *,
@@ -8,6 +13,9 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  font-family: $myFont;
+  color: colors.$textcolor;
 }
 
 h1, h2, h3, h4, h5, h6, p {
