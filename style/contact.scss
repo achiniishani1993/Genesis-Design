@@ -1,0 +1,15 @@
+@use "base";
+@use "colors";
+@use "nav";
+@use "footer";
+
+//map function for fonts
+$font-sizes: (
+  "small": 16px,
+  "normal": 18px,
+  "large": 22px,
+  "ex-large": 40px,
+);
+// Define variables
+$contentPadding: 40px 20px 40px;
+$contentMargin: 20px 60px;
