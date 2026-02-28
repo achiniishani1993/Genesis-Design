@@ -85,7 +85,8 @@ footer__logo {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
-  margin: 50px 60px;
+  margin: 20px 60px;
+  padding: 40px 20px 40px;
 }
 .fresh_text h2 {
   max-width: 300px;
@@ -137,6 +138,7 @@ footer__logo {
   grid-template-rows: repeat(3 auto);
   row-gap: 4rem;
   margin: 20px 60px;
+  padding: 40px 20px 40px;
 }
 .images_one img {
   width: 100%;
@@ -151,7 +153,7 @@ footer__logo {
 .images_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 30px;
+  column-gap: 25px;
 }
 .images_grid img {
   width: 100%;

@@ -3,7 +3,6 @@
 @use "nav";
 @use "footer";
 
-
 //map function for fonts
 $font-sizes: (
   "small": 16px,
@@ -12,16 +11,15 @@ $font-sizes: (
   "ex-large": 40px,
 );
 // Define variables
-$sectionMargin: 50px 60px;
+$contentPadding: 40px 20px 40px;
 $contentMargin: 20px 60px;
-
 
 .fresh {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
-  margin: $sectionMargin;
-  
+  margin: $contentMargin;
+  padding: $contentPadding;
 
   &_text {
     h2 {
@@ -78,15 +76,14 @@ $contentMargin: 20px 60px;
   }
 }
 
-.images{
+.images {
   display: grid;
   grid-template-rows: repeat(3 auto);
   row-gap: 4rem;
-   margin: $contentMargin;
-   
+  margin: $contentMargin;
+  padding: $contentPadding;
   &_one img {
-   width: 100%;
-   
+    width: 100%;
   }
   p {
     font-size: map-get($font-sizes, "small");
@@ -99,10 +96,10 @@ $contentMargin: 20px 60px;
   &_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 25px;
 
-     img {
-        width: 100%;
-     }
+    img {
+      width: 100%;
+    }
   }
 }
