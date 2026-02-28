@@ -132,4 +132,29 @@ footer__logo {
   border-bottom: 1px solid #ccc;
 }
 
+.images {
+  display: grid;
+  grid-template-rows: repeat(3 auto);
+  row-gap: 4rem;
+  margin: 20px 60px;
+}
+.images_one img {
+  width: 100%;
+}
+.images p {
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: left;
+}
+.images_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+.images_grid img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=projects.css.map */
