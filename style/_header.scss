@@ -28,7 +28,8 @@ $font-sizes: (
         color: $secondColor;
     }
 
-    p {
+    h1 {
+        max-width: 650px;
         margin: 0;           
         font-size: map-get($font-sizes, "xxx-large");
         line-height: 1.5;
