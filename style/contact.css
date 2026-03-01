@@ -122,8 +122,9 @@ footer__logo {
   border: none;
   border-bottom: 1px solid #979797;
 }
-.contact_map {
-  width: 20px;
+.contact_map img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=contact.css.map */
