@@ -89,9 +89,10 @@ footer__logo {
   padding: 40px 20px 40px;
 }
 .fresh_text h2 {
-  max-width: 300px;
+  max-width: 450px;
   width: 100%;
   text-align: left;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 1.5rem;

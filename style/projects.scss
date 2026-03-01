@@ -8,7 +8,7 @@ $font-sizes: (
   "small": 16px,
   "normal": 18px,
   "large": 22px,
-  "ex-large": 40px,
+  "xx-large": 40px,
 );
 // Define variables
 $contentPadding: 40px 20px 40px;
@@ -23,7 +23,7 @@ $contentMargin: 20px 60px;
 
   &_text {
     h2 {
-      max-width: 300px;
+      max-width: 450px;
       width: 100%;
       text-align: left;
       font-size: map-get($font-sizes, "xx-large");

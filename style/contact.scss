@@ -8,8 +8,67 @@ $font-sizes: (
   "small": 16px,
   "normal": 18px,
   "large": 22px,
-  "ex-large": 40px,
+  "xx-large": 40px,
 );
 // Define variables
 $contentPadding: 40px 20px 40px;
 $contentMargin: 20px 60px;
+
+// Sass @extend
+.button-basic {
+    border: none;
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    background-color: colors.$secondColor;
+    font-size: map-get($font-sizes, "small");
+    color: colors.$textcolorTwo;
+}
+
+.contact {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 4rem;
+  margin: $contentMargin;
+  padding: $contentPadding;
+
+  &_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+     
+
+      h2 {
+        max-width: 450px;
+        font-size: map-get($font-sizes, "xx-large");
+        font-weight: bold;
+        line-height: 1.6;
+     }
+
+     p {
+         font-size: map-get($font-sizes, "normal");
+         font-weight: 400;
+         opacity: 0.8;
+         line-height: 1.6;
+     }
+
+     form {
+       
+         input {
+            width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            border: none;
+            border-bottom: 1px solid colors.$strockColor;
+         }
+         button {
+             @extend .button-basic;
+         }
+     }
+
+  }
+  &_map {
+    width: 20px;
+  }
+}
+

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Genesis-Design</title>
-     <!-- linked google font -->
+    <!-- linked google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="style/normalize.css" />
     <!-- linked index.css -->
     <link rel="stylesheet" href="/style/contact.css" />
-</head>
-<body>
+  </head>
+  <body>
     <nav>
       <div>
         <img src="/Images/Logo (1).svg" alt="project log" />
@@ -26,6 +26,47 @@
         <a href="/pages/contact.html">Contacts</a>
       </div>
     </nav>
-
-</body>
+    <main>
+        <section class="contact">
+            <div class="contact_container">
+          <div class="contact_text">
+            <h2>Full set of great features to make your product fresh</h2>
+            <p>
+              Our favorite brands are our friends! We help them to achieve their
+              goals, they help us to stay sharp.
+            </p>
+          </div>
+          <div class="contact_form">
+            <form>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              /><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              /><br />
+              <input
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              /><br /><br />
+              <button type="submit" class="submit">Submit</button>
+            </form>
+          </div>
+          </div>
+          <div class="contact_map">
+            <img src="/Images/Map.png" alt="location in a map image" />
+          </div>
+        </section>
+    </main>
+  </body>
 </html>
